@@ -1,6 +1,57 @@
-canvas {
-    top: 50%;
-    left: 50%;
-    position: fixed;
-    transform: translate(-50%, -50%);
+* {
+    image-rendering: pixelated;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* canvas {
+    display: block;
+
+} */
+
+.fish {
+    /* position: absolute; */
+    /* animation: toRight linear 50s infinite alternate, bounce linear 50s infinite alternate; */
+}
+
+.fish-tank {
+    /* height: 1vh;
+    width: 1vw;
+    max-width: 1vh; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    48% {}
+
+    50% {
+        top: calc(100% - 64px);
+    }
+
+    52% {}
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes toRight {
+
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(100% - 64px);
+    }
 }
